@@ -4,18 +4,29 @@
       <v-container
         ><v-row>
           <v-col cols="12" xl="1" class="hidden-lg-and-down"></v-col>
-          <v-col cols="1" sm="1" lg="3" md="3" xl="2"
-            ><h2 class="hidden-sm-and-down" style="color: white">
-              DRAWING GENIE
-            </h2>
-            <h2 style="color: white" class="hidden-md-and-up">DG</h2>
+          <v-col
+            cols="1"
+            sm="1"
+            lg="3"
+            md="4"
+            xl="2"
+            style="align-self: center"
+          >
+            <div style="display: flex">
+              <v-icon large color="#9CB6A8">mdi-oil-lamp</v-icon>
+              <h2 class="hidden-sm-and-down" style="color: white">
+                DRAWING GENIE
+              </h2>
+
+              <h2 style="color: white" class="hidden-md-and-up">DG</h2>
+            </div>
           </v-col>
-          <v-col cols="2" sm="5" lg="4" md="3" xl="5"></v-col>
-          <v-col cols="9" sm="6" lg="5" md="6" xl="4">
+          <v-col cols="2" sm="6" lg="4" md="2" xl="5"></v-col>
+          <v-col cols="9" sm="5" lg="5" md="6" xl="4">
             <v-btn
               class="mr-5 hidden-sm-and-down"
               dark
-              color="rgb(230,138,0)"
+              color="#9CB6A8"
               style="display: inline-block"
               >Generate</v-btn
             >
@@ -23,7 +34,7 @@
               class="mr-2 hidden-md-and-up"
               small
               dark
-              color="rgb(230,138,0)"
+              color="#9CB6A8"
               style="display: inline-block"
               ><v-icon>mdi-cloud-upload</v-icon></v-btn
             >
@@ -44,9 +55,6 @@
             <v-icon class="mr-2" style="color: white; display: inline-block"
               >mdi-magnify</v-icon
             >
-            <v-icon class="mr-2" style="color: white; display: inline-block"
-              >mdi-email</v-icon
-            >
             <v-icon style="color: white; display: inline-block"
               >mdi-earth</v-icon
             >
@@ -65,7 +73,9 @@
             md="1"
             sm="1"
             style="align-self: center"
-            ><v-btn text>Feed</v-btn></v-col
+            ><router-link to="/login" style="text-decoration: none"
+              ><v-btn text>Feed</v-btn></router-link
+            ></v-col
           >
           <v-col
             cols="2"
@@ -120,7 +130,7 @@ export default {};
   display: flex;
   align-items: center;
   height: 60px;
-  background: rgb(38, 38, 40);
+  background: #30402f;
 }
 #header2 {
   display: flex;
